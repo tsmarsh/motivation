@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Merriweather:wght@700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Clean, formal sans-serif font */
+    background-color: #4a4a4a; /* Lightened dark background */
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Concrete-like texture */
+    background-size: cover;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.poster {
+    border: 5px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 700px;
+    text-align: center;
+    position: relative;
+}
+
+.poster.pastel-blue {
+    background-color: #a8dadc;
+}
+
+.poster.pastel-pink {
+    background-color: #ffcccb;
+}
+
+.poster.pastel-green {
+    background-color: #a0d995;
+}
+
+.poster.pastel-yellow {
+    background-color: #fce38a;
+}
+
+.poster h1 {
+    font-family: 'Merriweather', serif; /* Formal, serif font for headings */
+    font-size: 36px;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.poster p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.poster::before, .poster::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: #000;
+}
+
+.poster::before {
+    top: 0;
+}
+
+.poster::after {
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Merriweather', serif; /* Formal font for links */
+    color: #f4a261;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px;
+}
+
+a:hover {
+    color: #fff;
+}
